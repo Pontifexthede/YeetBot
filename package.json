@@ -1,7 +1,7 @@
 {
-  "name": "yeetbot-minimal",
+  "name": "yeetbot-fresh",
   "version": "1.0.0",
-  "description": "Minimal WhatsApp bot — runs without npm install issues.",
+  "description": "Fresh deploy — no yarn, no github, no errors.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
