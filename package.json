@@ -1,0 +1,13 @@
+{
+  "name": "yeetbot-minimal",
+  "version": "1.0.0",
+  "description": "Minimal WhatsApp bot — runs without npm install issues.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@adiwajshing/baileys": "^6.5.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
