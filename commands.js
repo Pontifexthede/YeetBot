@@ -22,7 +22,7 @@ const { downloadMediaMessage } = require('@whiskeysockets/baileys');
 
 const PREFIX = process.env.PREFIX || '.';
 const YTDLP_PATH = path.join(__dirname, 'yt-dlp.exe');
-const DATA_FILE = path.join(__dirname, 'yeetbot-data.json');
+const DATA_FILE = path.join(__dirname, 'data', 'yeetbot-data.json');
 const FFMPEG_PATH = path.join(__dirname, 'ffmpeg.exe'); // (if not already present, keep this line)
 
 // OWNER config:
