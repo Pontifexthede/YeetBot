@@ -1,6 +1,7 @@
 // index.js - clean Yeetbot entry with anti-delete support
 
 require('dotenv').config();
+const path = require('path');
 
 const makeWASocket = require('@whiskeysockets/baileys').default;
 const {
@@ -19,7 +20,8 @@ const {
 async function startYeetbot() {
   console.log('=== YEETBOT STARTING (CLEAN MODE) ===');
 
-  const { state, saveCreds } = await useMultiFileAuthState('./auth_info');
+  const authDir = path.join(__dirname, 'data', 'auth_info');
+  const { state, saveCreds } = await useMultiFileAuthState(authDir);
   const { version } = await fetchLatestBaileysVersion();
   console.log('Using Baileys version:', version);
 
